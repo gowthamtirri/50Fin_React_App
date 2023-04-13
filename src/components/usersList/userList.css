@@ -92,3 +92,17 @@ table tr {
   border: none;
   outline: none;
 }
+@media only screen and (max-width: 720px) {
+  .table-wrapper {
+    width: 90vw;
+    margin: auto;
+    overflow-y: scroll;
+  }
+  .control-panel {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .control-panel .search {
+    margin-top: 10px;
+  }
+}

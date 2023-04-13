@@ -76,26 +76,28 @@ const UserList = () => {
             <button onClick={() => setAddUserActive(true)}>+ Add User</button>
           </div>
         </div>
-        <table>
-          <thead>
-            <tr>
-              <th>User ID</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Phone</th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentItems.map((user) => (
-              <tr key={user.id}>
-                <td>{user.id}</td>
-                <td>{user.name}</td>
-                <td>{user.email}</td>
-                <td>{user.phone}</td>
+        <div className="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {currentItems.map((user) => (
+                <tr key={user.id}>
+                  <td>{user.id}</td>
+                  <td>{user.name}</td>
+                  <td>{user.email}</td>
+                  <td>{user.phone}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
         <div className="pagination">
           {Array.from(
             { length: Math.ceil(filteredUsers.length / itemsPerPage) },
