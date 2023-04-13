@@ -1,0 +1,94 @@
+table {
+  width: 500px;
+  box-shadow: 2px 2px 4px 2px #00000016;
+  border-radius: 5px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: left;
+  background: white;
+}
+tbody {
+  min-height: 300px !important;
+  overflow-y: scroll;
+}
+table thead th {
+  background: #1f1f67;
+  color: white;
+  min-width: 100px;
+}
+table thead th,
+tbody td {
+  padding: 8px 12px;
+}
+table tr {
+  border-bottom: 0.5px solid #d7d6d6;
+}
+.pagination {
+  margin: 10px 0;
+}
+.pagination button {
+  padding: 6px 10px;
+  margin-right: 5px;
+  border: none;
+  background: #e4e4f8;
+  cursor: pointer;
+}
+.pagination button.active {
+  background: #1f1f67;
+  color: white;
+}
+.addUser {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.addUser button {
+  padding: 6px 8px;
+  margin: 10px 0;
+  border: none;
+  background: #1f1f67;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #ffffff20;
+}
+.addUser button:hover {
+  background: white;
+  color: #1f1f67;
+}
+
+.control-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.control-panel select {
+  padding: 4px 8px;
+  border: none;
+}
+.listWrapper {
+  margin: 60px 0;
+}
+.itemsPerPage {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+.itemsPerPage select,
+.search input {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.itemsPerPage p {
+  margin-right: 10px;
+}
+.search {
+  width: 100%;
+}
+.search input {
+  padding: 5px 8px;
+  border: none;
+  outline: none;
+}

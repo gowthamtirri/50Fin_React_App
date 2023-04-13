@@ -1,0 +1,62 @@
+.addUserForm {
+  background: #0000006e;
+  box-shadow: 2px 2px 2px 2px #00000024;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+.addUserForm form {
+  margin-top: -120px;
+  background: white;
+  padding: 30px;
+  border-radius: 5px;
+}
+.addUserForm form .field {
+  margin: 20px 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.addUserForm form label {
+  flex: 1;
+  margin-right: 10px;
+}
+.addUserForm form input {
+  padding: 6px 8px;
+  outline: none;
+  border: 0.5px solid #d0d0d0;
+  transition: border 0.5s ease;
+}
+.addUserForm form input:focus {
+  border: none;
+  border-bottom: 0.5px solid #2b2ba4;
+}
+.formBtns {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.formBtns button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cancelBtn:hover {
+  background: #22227b;
+  color: white;
+}
+.addBtn {
+  background: #22227b;
+  color: white;
+}
+.addBtn:hover {
+  box-shadow: 2px 2px 4px 2px #0000001a;
+  background: white;
+  color: #22227b;
+}
